@@ -311,6 +311,8 @@ template <class LGFX> void LGFXDriver<LGFX>::init_lgfx(void)
         uint16_t parameters[8] = {255, 3691, 203, 198, 3836, 3659, 3795, 162};
 #elif defined(SENSECAP_INDICATOR)
         uint16_t parameters[8] = {23, 3, 0, 479, 476, 2, 475, 479};
+#elif defined(MESH_TAB)
+        uint16_t parameters[8] = {0, 477, 0, 3, 319, 451, 319, 1};
 #else
         uint16_t parameters[8] = {0, 0, 0, 0, 0, 0, 0, 0};
         ILOG_WARN("Touch screen has no calibration data!!!");
